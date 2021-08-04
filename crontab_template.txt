@@ -1,0 +1,2 @@
+0 5 * * * bash /home/pi/Documents/rPi-RSS/update_rss_feed.sh
+@reboot bash /home/pi/Documents/rPi-RSS/launch_ssh_agent.sh

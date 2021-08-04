@@ -1,0 +1,11 @@
+https://www.smbc-comics.com/comic/rss
+https://waitbutwhy.com/feed
+https://xkcd.com/rss.xml
+https://www.strongtowns.org/journal?format=rss
+https://feeds.feedburner.com/oatmealfeed
+https://feed.tedium.co/
+https://api.quantamagazine.org/feed/
+https://writings.stephenwolfram.com/feed/
+https://aperiodical.com/feed/
+https://mathwithbaddrawings.com/feed/
+https://news.ycombinator.com/rss
