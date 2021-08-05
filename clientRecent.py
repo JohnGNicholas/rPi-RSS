@@ -2,7 +2,6 @@
 
 from datetime import datetime
 from time import gmtime,mktime
-import numpy as np
 import feedparser
 import bs4
 
