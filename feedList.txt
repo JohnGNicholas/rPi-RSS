@@ -9,3 +9,4 @@ https://writings.stephenwolfram.com/feed/
 https://aperiodical.com/feed/
 https://mathwithbaddrawings.com/feed/
 https://news.ycombinator.com/rss
+https://writing.kemitchell.com/feed.xml
