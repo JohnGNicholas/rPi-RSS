@@ -15,7 +15,7 @@ Set up a website with Github Pages to host the aggregated content.
 
 Clone your website repository to your Raspberry Pi. It will work best if this is simply cloned to /home/pi/Documents
 
-Set up a Github SSH key for the repository on the aggregator machine to enable it to automatically push to Github.
+Set up a [Github SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for the repository on the aggregator machine to enable it to automatically push to Github.
 
 Clone the rPi-RSS repository to into the parent directory of the website directory on your Raspberry Pi.
 
