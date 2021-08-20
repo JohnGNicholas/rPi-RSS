@@ -109,7 +109,7 @@ for i in range(len(links)):
 soup.body.append(paragraph)
 
 # Print the BeautifulSoup object into the desired file to be displayed on the site
-with open("feed.html", "w") as fout:
+with open("index.html", "w") as fout:
   # Write the entire document
   fout.write(str(soup.prettify()))
 
