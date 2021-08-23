@@ -4,31 +4,27 @@ Hello! This repository holds the code for the Raspberry Pi-powered [RSS aggregat
 This project requires [feedparser](https://github.com/kurtmckee/feedparser) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/). These packages are open-source and freely available in package managers such as [PyPi](https://pypi.org/) and [Conda](https://conda.io).
 
 Here is a screenshot of the RSS aggregator in action:
-![RSS Feed Image](rss_feed_image.png)
+<img src="rss_feed_image.png" width="200" />
 
 # Build instructions
 (These instructions will be updated to be easier to follow in the future)
 
-Obtain a Raspberry Pi or other Linux machine to host the aggregator. Set a strong password! Security is for everyone!
+1. Obtain a Raspberry Pi or other Linux machine to host the aggregator. Set a strong password! Security is for everyone!
 
-Set up a website with Github Pages to host the aggregated content.
+2. Clone a copy of the rPi-RSS repository to your Raspberry Pi.
 
-Clone your website repository to your Raspberry Pi. It will work best if this is simply cloned to /home/pi/Documents
+3. Set up a [Github SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for the repository on the aggregator machine to enable it to automatically push to Github.
 
-Set up a [Github SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for the repository on the aggregator machine to enable it to automatically push to Github.
+4. Enable [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site) for your copy of the rPi-RSS repository.
 
-Clone the rPi-RSS repository to into the parent directory of the website directory on your Raspberry Pi.
+5. Modify the content of feedList.txt to contain the URL addresses for the RSS feeds you wish to subscribe to.
 
-Modify the content of feedList.txt to contain the URL addresses for the RSS feeds you wish to subscribe to.
+6. Modify the feedTemplate.html file to your desired HTML header and add any content to the body you wish to appear "above the fold".
 
-Modify the feedTemplate.html file to your desired HTML header and add any content to the body you wish to appear "above the fold".
+7. Modify the update_rss_feed.sh file to include the appropriate file paths to your rPi-RSS directory on your Raspberry Pi.
 
-Copy the modified feedTemplate.html file to your website using the command: cp feedTemplate.html ../<your_website_name.github.io>/rss_feed/feedTemplate.html
+8. Modify the crontab_template.txt file to include the appropriate file paths to your update_rss_feed.sh file.
 
-Modify the update_rss_feed.sh file to include the appropriate file paths to your rPi-RSS and website directories on your Raspberry Pi.
+9. Copy the contents of the modified crontab_template.txt file into your cron file with the command `crontab -e`
 
-Modify the crontab_template.txt file to include the appropriate file paths to your rPi-RSS directory.
-
-Copy the contents of the crontab_template.txt file into your cron file with the command crontab -e
-
-If you wish to aggregate by feed instead of by date, modify the update_rss_feed.sh file to call client.py instead of clientRecent.py
+10. If you wish to aggregate by feed instead of by date, modify the update_rss_feed.sh file to call client.py instead of clientRecent.py
