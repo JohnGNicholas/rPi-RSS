@@ -4,7 +4,7 @@ Hello! This repository holds the code for the Raspberry Pi-powered [RSS aggregat
 This project requires [feedparser](https://github.com/kurtmckee/feedparser) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/). These packages are open-source and freely available in package managers such as [PyPi](https://pypi.org/) and [Conda](https://conda.io).
 
 Here is a screenshot of the RSS aggregator in action:
-<img src="rss_feed_image.png" width="200" />
+![RSS Feed Image](rss_feed_image.png)
 
 # Build instructions
 (These instructions will be updated to be easier to follow in the future)
