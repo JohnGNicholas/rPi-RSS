@@ -10,3 +10,4 @@ https://aperiodical.com/feed/
 https://mathwithbaddrawings.com/feed/
 https://news.ycombinator.com/rss
 https://writing.kemitchell.com/feed.xml
+https://thereader.mitpress.mit.edu/feed/
